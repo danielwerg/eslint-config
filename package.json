@@ -1,0 +1,45 @@
+{
+  "name": "@danielwerg/eslint-config",
+  "version": "0.0.0",
+  "author": "Daniel Werg",
+  "description": "Shared ESLint config",
+  "license": "MIT",
+  "repository": "danielwerg/eslint-config",
+  "main": "typescript.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "prettier": "@danielwerg/prettier-config",
+  "devDependencies": {
+    "@danielwerg/prettier-config": "^0.0.0",
+    "@danielwerg/tsconfig": "^0.0.0",
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@typescript-eslint/utils": "^5.53.0",
+    "eslint": "^8.34.0",
+    "eslint-define-config": "^1.15.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5",
+    "eslint": ">=8",
+    "eslint-plugin-import": ">=2",
+    "prettier": ">=2",
+    "typescript": ">=4"
+  },
+  "files": [
+    "javascript.js",
+    "typescript.js"
+  ],
+  "keywords": [
+    "eslint",
+    "config",
+    "eslint-config",
+    "eslintconfig"
+  ]
+}
