@@ -1,6 +1,6 @@
 {
   "name": "@danielwerg/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Daniel Werg",
   "description": "Shared ESLint config",
   "license": "MIT",
