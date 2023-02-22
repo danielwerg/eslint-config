@@ -33,6 +33,7 @@
     "typescript": ">=4"
   },
   "files": [
+    "src",
     "javascript.js",
     "typescript.js"
   ],
