@@ -47,7 +47,7 @@ exports.javascriptRules = {
   'implicit-arrow-linebreak': ['warn', 'beside'], // Prettier
   indent: ['warn', 2], // Prettier
   'init-declarations': ['off'],
-  'jsx-quotes': ['warn', 'prefer-single'], // Prettier
+  'jsx-quotes': ['warn', 'prefer-single'],
   'key-spacing': [
     'warn',
     { beforeColon: false, afterColon: true, mode: 'strict' }
@@ -275,7 +275,7 @@ exports.javascriptRules = {
   'prefer-spread': ['warn'], // ts transpiles spread to apply, so no need for manual apply
   'prefer-template': ['warn'],
   'quote-props': ['warn', 'as-needed'], // Prettier
-  quotes: ['error', 'single'], // Prettier
+  quotes: ['error', 'single'],
   radix: ['warn', 'as-needed'],
   'require-atomic-updates': ['error'],
   'require-await': ['error'],

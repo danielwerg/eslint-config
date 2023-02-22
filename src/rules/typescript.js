@@ -168,7 +168,7 @@ exports.typescriptRules = {
   '@typescript-eslint/prefer-string-starts-ends-with': ['warn'],
   '@typescript-eslint/prefer-ts-expect-error': ['error'], // Redundant with @typescript-eslint/ban-ts-comment
   '@typescript-eslint/promise-function-async': ['warn'],
-  '@typescript-eslint/quotes': ['off'], // Prettier
+  '@typescript-eslint/quotes': ['warn', 'single'],
   '@typescript-eslint/require-array-sort-compare': [
     'warn',
     { ignoreStringArrays: true }
