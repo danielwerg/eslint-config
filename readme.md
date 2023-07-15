@@ -35,9 +35,16 @@ yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslin
 `.eslintrc.js`
 
 ```js
-module.exports = {
-  extends: '@danielwerg/eslint-config',
-  root: true,
-  parserOptions: { tsconfigRootDir: __dirname, project: './tsconfig.eslint.json' }
-};
+/** @type {import('eslint').Linter.Config} */
+module.exports = defineConfig({ extends: ['./typescript'], root: true });
+```
+
+### TypeScript Aware Rules
+
+Type aware rules are enabled when a `tsconfig.eslint.json` is found in the project root, which will introduce some stricter rules into your project. If you want to enable it while have no `tsconfig.eslint.json` in the project root, you can change tsconfig name by modifying `ESLINT_TSCONFIG` env.
+
+`.eslintrc.js`
+
+```diff
++ process.env['ESLINT_TSCONFIG'] = 'tsconfig.json';
 ```

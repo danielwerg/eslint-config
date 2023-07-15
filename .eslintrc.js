@@ -1,7 +1,6 @@
 const { defineConfig } = require('eslint-define-config');
 
-module.exports = defineConfig({
-  extends: ['./typescript'],
-  root: true,
-  parserOptions: { tsconfigRootDir: __dirname, project: './tsconfig.json' }
-});
+process.env['ESLINT_TSCONFIG'] = 'tsconfig.json';
+
+/** @type {import('eslint').Linter.Config} */
+module.exports = defineConfig({ extends: ['./typescript'], root: true });
