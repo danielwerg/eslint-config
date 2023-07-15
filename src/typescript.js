@@ -7,7 +7,8 @@ const { prettierConflictRules } = require('./rules/conflicts/prettier');
 const { importRules } = require('./rules/import');
 
 const tsconfigRootDir = process.cwd();
-const tsconfigFilePath = process.env['ESLINT_TSCONFIG'] ?? './tsconfig.json';
+const tsconfigFilePath =
+  process.env['ESLINT_TSCONFIG'] ?? './tsconfig.eslint.json';
 
 module.exports = defineConfig({
   env: { es2022: true, node: true },

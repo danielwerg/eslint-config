@@ -38,6 +38,6 @@ yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslin
 module.exports = {
   extends: '@danielwerg/eslint-config',
   root: true,
-  parserOptions: { tsconfigRootDir: __dirname, project: './tsconfig.json' }
+  parserOptions: { tsconfigRootDir: __dirname, project: './tsconfig.eslint.json' }
 };
 ```
