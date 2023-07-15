@@ -13,7 +13,7 @@ module.exports = defineConfig({
   env: { es2022: true, node: true },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx', '**/*.cts', '**/*.mts'],
+      files: ['**/*.{ts,tsx,cts,mts}'],
       parser: '@typescript-eslint/parser',
       parserOptions: { tsconfigRootDir, project: tsconfigFilePath },
       plugins: ['@typescript-eslint', 'import'],

@@ -8,7 +8,7 @@ module.exports = defineConfig({
   env: { es2022: true, node: true },
   overrides: [
     {
-      files: ['**/*.js', '**/*.jsx', '**/*.cjs', '**/*.mjs'],
+      files: ['**/*.{js,jsx,cjs,mjs}'],
       plugins: ['import'],
       rules: { ...javascriptRules, ...prettierConflictRules, ...importRules }
     }
