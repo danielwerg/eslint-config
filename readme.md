@@ -35,8 +35,34 @@ yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslin
 `.eslintrc.js`
 
 ```js
-/** @type {import('eslint').Linter.Config} */
-module.exports = defineConfig({ extends: ['./typescript'], root: true });
+module.exports = { extends: ['@danielwerg/eslint-config'], root: true };
+```
+
+### Types for config
+
+```sh
+yarn add -D @types/eslint
+```
+
+`.eslintrc.js`
+
+```diff
++ /** @type {import('eslint').Linter.Config} */
+```
+
+or
+
+```sh
+yarn add -D eslint-define-config
+```
+
+`.eslintrc.js`
+
+```diff
++ const { defineConfig } = require('eslint-define-config');
++
+- module.exports = { extends: ['@danielwerg/eslint-config'], root: true };
++ module.exports = defineConfig({ extends: ['@danielwerg/eslint-config'], root: true });
 ```
 
 ### With VSCode Prettier ESLint extension
